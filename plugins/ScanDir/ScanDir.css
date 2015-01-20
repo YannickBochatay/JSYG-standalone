@@ -1,0 +1,43 @@
+.ScanDirIcons,.ScanDirDetails {
+	box-shadow: 0 0 2px gray;
+	border:1px solid #DDD;
+}
+.ScanDirIcons a,.ScanDirDetails a{
+	text-decoration: none;
+	padding: 2px;
+	margin: 0px 5px;
+	cursor:default;
+}
+.ScanDirIcons a{
+	display:inline-block;
+	text-align:center;	
+	width:80px;
+	max-height:80px;
+	line-height:85%;
+	overflow:hidden;
+	vertical-align:top;
+}
+.ScanDirDetails a{
+	display:block;
+}
+.ScanDirIcons a img{
+	width:32px;
+	height:32px;
+	display:block;
+	margin:auto;
+	border:0;
+}
+.ScanDirDetails a img{
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	border:0;
+}
+.ScanDirIcons a:hover,.ScanDirDetails a:hover {
+	background-color:#DDD;
+}
+.ScanDirDetails a span.size, .ScanDirDetails a span.date {
+	float:right;
+	font-size: 10px;
+	padding:0px 10px;
+}

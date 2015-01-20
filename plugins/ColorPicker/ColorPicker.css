@@ -1,0 +1,99 @@
+div.colorPicker {
+	width: 240px;
+	display:block;
+	border: 0 none;
+	padding: 10px;
+	border:0;
+	font-size:11px;
+}
+div.colorPicker.input {
+	position:absolute;
+	background-color:#DDD;
+	background: linear-gradient(center top , white, #EEE);
+	background: -webkit-linear-gradient(center top , white, #EEE);
+	background: -moz-linear-gradient(center top , white, #EEE);
+    box-shadow: 0 0 5px black;
+    z-index: 1;
+}
+div.colorPicker div.divsv {
+	position:relative;
+	width: 200px;
+	height: 200px;
+	background: none repeat scroll 0% 0% rgb(255, 0, 0);
+	border:0;
+	margin:0;
+	padding:0;
+}
+div.colorPicker img.imgsv {
+	width:200px;
+	height:200px;
+	display:block;
+	border:0;
+	margin:0;
+	padding:0;
+}
+div.colorPicker img.imgcrosshairs {
+	position: absolute;
+	width:21px;
+	height:21px;
+	left:-11px;
+	top:189px;
+	border:0;
+	background:none;
+	background-color:none;
+}
+div.colorPicker div.divh {
+	float:right;
+	position:relative;
+	height:200px;
+	border:0;
+	margin:0;
+	padding:0;
+}
+div.colorPicker img.imgh {
+	width:20px;
+	height:200px;
+	display:block;
+	border:0;
+	margin:0;
+	padding:0;
+}
+div.colorPicker img.imgposition {
+	position: absolute;
+	width:20px;
+	height:11px;
+	border:0;
+	background:none;
+	background-color:none;
+	top:-6px;
+	left:0;
+}
+div.colorPicker label {
+	display:block;
+	margin:3px;
+}
+div.colorPicker form.boutons {
+	border:0;
+	font-family:sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	padding: 0px;
+	color: black;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:-5px;
+}
+div.colorPicker div.divinputs {
+	margin:5px 4px 5px 0px;	
+}
+div.colorPicker div.divinputs label {
+	display:inline;
+}
+div.colorPicker div.divinputs input {
+	width:28px;
+	font-size:12px;
+}
+div.colorPicker input.transparent {
+	margin:5px 5px 5px 0;
+	vertical-align:middle;
+}

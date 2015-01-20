@@ -1,0 +1,63 @@
+ul.Menu
+{
+	position:absolute;
+	background-color:#F1F1F1;
+	border:1px solid gray;
+	z-index:10;
+	border-radius:2px;
+	box-shadow: 2px 1px 1px gray;
+	list-style:none;
+	padding:3px 0px;
+	margin:0;
+	line-height:normal;
+}
+ul.Menu li {
+	margin:3px 0px;
+}
+ul.Menu li.divider {
+	border-bottom:1px solid #ccc;
+	width:100%;
+}
+ul.Menu a, a.droppableMenuItem {
+	color:black;
+	font-family:helvetica;
+	text-decoration:none;
+	font-size:12px;
+	display:block;
+	padding:2px 5px 2px 27px;
+	background-position:5px 50%;
+	background-size:16px 16px;
+	background-repeat:no-repeat;
+	position:relative;
+	cursor:default;
+}
+ul.Menu a:focus{
+	background-color:#e5ecff;
+}
+ul.Menu a img{
+	border:0;
+	float:right;
+	margin:4px 0px 0px 5px;
+}
+ul.Menu a input {
+	vertical-align:middle;
+	position:absolute;
+	left:6px;
+	cursor:default;
+}
+ul.Menu span.globalShortcut{
+	float:right;
+	margin:0px 0px 0px 15px;
+	color:gray;
+}
+ul.Menu span.shortCut{
+	text-decoration:underline;	
+}
+ul.Menu a.disabled {
+	color:gray;
+	font-style:italic;
+	cursor:not-allowed;
+}
+ul.Menu a.disabled input {
+	cursor:not-allowed;
+}

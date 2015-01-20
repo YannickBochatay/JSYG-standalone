@@ -1,0 +1,8 @@
+.legend {
+	background:none repeat scroll 0 0 rgba(255, 255, 255, 0.6);
+	*background:url(px_semitrans.png);
+	padding:10px;
+	color:black;
+	text-align:center;
+	margin:0;
+}

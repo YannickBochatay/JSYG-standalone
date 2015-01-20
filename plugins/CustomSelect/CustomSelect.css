@@ -1,0 +1,37 @@
+.cSelect_menu {
+	z-index: 10;
+	background-color: white;
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius:		3px;
+	box-shadow:			0 0 5px rgba(0,0,0,.7);
+}
+.cSelect_menu h3 {
+	margin:8px;
+}
+.cSelect_menu a {
+	display: block;
+	white-space: pre-wrap;
+	padding:2px;
+}
+.cSelect_menu a:hover {
+	background-color:#eee;
+}
+.cSelect_button img,.cSelect_button svg {
+	vertical-align:middle;
+}
+.cSelect_menu img,.cSelect_menu svg {
+	vertical-align:middle;
+	margin-right:5px;
+	border:0;
+}
+.cSelect_menu a.selected {
+	background-color:#ccc;	
+}
+.cSelect_menu a.disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+.cSelect_button img,.cSelect_bouton img{
+	border:0;
+}

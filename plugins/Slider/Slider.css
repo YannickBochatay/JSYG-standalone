@@ -1,0 +1,29 @@
+div.slider {
+	border:1px solid gray;
+	background-color:#DDDDDD;
+	border-radius: 3px;
+	background: -moz-linear-gradient(top, white, #DDDDDD);
+	background: -webkit-linear-gradient(top, white, #DDDDDD);
+	background: -o-linear-gradient(top, white, #DDDDDD);
+	background: linear-gradient(top, white, #DDDDDD);
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+div.slider div{
+	background-color:#CCCCCC;
+	border:1px solid gray;
+	border-radius: 3px;
+	background: -moz-linear-gradient(top, #DDDDDD, gray);
+	background: -webkit-linear-gradient(top, #DDDDDD, gray);
+	background: -o-linear-gradient(top, #DDDDDD, gray);
+	background: linear-gradient(top, #DDDDDD, gray);
+}
+.sliderTooltip {
+	position: fixed;
+	background-color: #fffeeb;
+	padding: 2px;
+	border: 1px solid gray;
+	font-size: 12px;
+	z-index: 60;
+}

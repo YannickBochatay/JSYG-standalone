@@ -1,0 +1,80 @@
+iframe.rich {
+	box-shadow: 0 0 3px gray;
+	border:1px solid #DDD;
+}
+.richToolBar a,.richIcon
+{
+	margin: 2px;
+	padding:3px;
+	cursor: pointer;
+	background-color: rgb(212, 208, 200);
+	border: 1px outset;
+	position: relative;
+	text-decoration:none;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	min-width:16px;
+	color:black;
+	font-size:13px;
+	text-align:center;
+	font-family:helvetica, sans-serif;
+}
+.richToolBar a:active, .richToolBar a.selected, .richIcon:active, .richIcon.selected {
+	border: 1px inset;
+	background-color: rgb(220, 220, 220);
+	left: 1px;
+	top: 1px;
+}
+.richToolBar a img, .richIcon img, .richList img {
+	vertical-align:bottom;
+	border:0;
+}
+.richToolBar a.fontFamily {
+	width:125px;
+}
+.richToolBar a.fontColor {
+	width:50px;
+}
+.richToolBar a.heading {
+	width:60px;
+}
+.richList
+{
+	position:absolute;
+	background-color:white;
+	border:1px solid gray;
+	font-size:15px;
+	z-index:2;
+	box-shadow: 0 0 3px gray;
+	padding:3px;
+	text-align:center;
+}
+.richList a,.richList a:visited
+{
+	text-decoration:none;
+	display:block;
+	color:black;
+	background-color:white;
+	border:0;
+	margin:0;
+	padding:3px;
+}
+.richList a:hover
+{
+	background-color:gray;
+	color:white;
+}
+.richList.smileys a
+{
+	margin:2px;
+	padding:0;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+.richList.heading h1,.richList.heading h2,.richList.heading h3,.richList.heading h4,.richList.heading h5,.richList.heading h6
+{
+	margin:0;
+	padding:0;
+}

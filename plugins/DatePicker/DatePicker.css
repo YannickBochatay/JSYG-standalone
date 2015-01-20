@@ -1,0 +1,75 @@
+.datePicker table {
+	border-collapse:collapse;
+}
+.datePicker table td {
+	font-family: verdana,sans-serif;
+	font-size: 9px;
+	text-align: center;
+	vertical-align:middle;
+	padding:4px 3px;
+}
+
+.datePicker .line1 {
+	background-color: #FFC;
+	font-weight: bold;
+}
+.datePicker .line1 td.browse {
+	cursor: pointer;
+}
+
+.datePicker .month {
+	cursor: default;
+}
+.datePicker .day {
+	height:18px;
+}
+
+.datePicker .week {
+	background-color: #FFE;
+	font-weight: bold;
+}
+
+.datePicker .day .otherMonth {
+	color: #777;
+}
+
+.datePicker .day td {
+	min-width:24px;
+	*width:24px;
+	cursor: pointer;
+	border: 1px solid #e0e0e0;
+}
+.datePicker .day td.selected {
+	background-color: rgb(157,255,130);
+}
+
+.datePicker .day td:hover {
+	background-color: #c0c0FF;
+}
+
+.datePicker .day .today {
+	border: 1px solid rgb(133,0,0);
+}
+
+.datePicker .day .off {
+	background-color: #e5e5e5;
+}
+
+.datePicker .day .disable {
+	color: #AAA;
+	cursor:not-allowed;
+	text-decoration:line-through;
+}
+
+.datePicker.input {
+	border: 1px gray dashed;
+	background-color:white;
+	position:absolute;
+	display:none;
+}
+
+.datePicker td.close {
+	cursor: pointer;
+	color: #F55;
+	font-weight: bold;
+}

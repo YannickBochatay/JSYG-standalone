@@ -1,0 +1,26 @@
+rect.marqueeZoom {
+	fill:black;
+	fill-opacity:0.1;
+	stroke:black;
+	stroke-width:0.5;
+	stroke-dasharray:4,4;
+}
+div.marqueeZoom {
+	opacity:0.2;
+	filter:alpha(opacity = 0.2);
+	border:1px dashed black;
+	position:absolute;
+	background-color:#CCC;
+	z-index:100;
+}
+.SVGResize {
+	position:relative;
+	left:-18px;
+	cursor: nw-resize;
+}
+.MousePanClosedHand {
+	cursor:url('img/closedhand.cur') 4 4, auto	
+}
+.MousePanOpenHand {
+	cursor:url('img/openhand.cur') 4 4, auto
+}

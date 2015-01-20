@@ -1,0 +1,16 @@
+img.icon {
+	padding:5px;
+	box-shadow: 0 0 2px #222;
+	margin:0 5px;
+}
+img.icon:hover {
+	background-color:#ddd;	
+}
+img.icon:active {
+	position:relative;
+	left:1px;
+	top:1px;	
+}
+img.icon.selected {
+	background-color:#ccc;
+}

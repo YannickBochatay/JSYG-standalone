@@ -1,0 +1,40 @@
+.slideField,.slideField:visited {
+	font-family: verdana,sans-serif;
+	color:black;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid gray;
+	cursor: pointer;
+	border-radius: 5px 5px 0px 0px;
+	/*display:inline-block;
+	*zoom:1;
+	*display:inline;*/
+	padding:5px;
+	text-decoration:none;
+	font-size:12px;
+	background: linear-gradient(top,  #dddddd 0%,#cccccc 40%,#999999 100%); /* W3C */
+	background: -moz-linear-gradient(top,  #dddddd 0%, #cccccc 40%, #999999 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#cccccc 40%,#999999 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dddddd 0%,#cccccc 40%,#999999 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dddddd 0%,#cccccc 40%,#999999 100%); /* IE10+ */	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DDDDDD', endColorstr='#999999',GradientType=0 ); /* IE6-9 */
+}
+
+.slideField.selected, .slideField.selected:hover {
+	backgorund-color:gold;
+	background: linear-gradient(top, #ffffff 0%,#eeeeee 37%,#cccccc 100%); /* W3C */
+	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 37%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 37%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 37%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 37%,#cccccc 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#CCCCCC',GradientType=0 ); /* IE6-9 */
+}
+
+.slideField:hover {
+	background: linear-gradient(top, #ffffff 0%,#dddddd 37%,#bbbbbb 100%); /* W3C */
+	background: -moz-linear-gradient(top, #ffffff 0%, #dddddd 37%, #bbbbbb 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#dddddd 37%,#bbbbbb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#dddddd 37%,#bbbbbb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#dddddd 37%,#bbbbbb 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#BBBBBB',GradientType=0 ); /* IE6-9 */
+}

@@ -1,0 +1,39 @@
+.domTree ul,.domTree li {
+	padding-left:7px;
+}
+.domTree li {
+	list-style-type:none;
+}
+.domTree img {
+	margin-right:5px;
+	-moz-transform : rotate(0deg);
+	transform: rotate(0deg);
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+	cursor:pointer;
+	vertical-align:middle;
+}
+.domTree img.unrolled {
+	-moz-transform : rotate(90deg);
+	transform: rotate(90deg);
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;	
+}
+.domTree img:hover {
+	margin-right:5px;	
+}
+.domTree a {
+	cursor:default;
+	text-decoration:none;
+	color:black;
+}
+.domTree a:hover,.domTree a.selected {
+	background-color:#ddd;
+}
+.domTreeBox {
+	background-color:transparent;
+	fill:none;
+	stroke:red;
+	stroke-width:2px;
+	border:2px solid red;	
+}

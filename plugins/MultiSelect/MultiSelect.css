@@ -1,0 +1,34 @@
+.multiSelect {
+	border:1px solid #b1cff1;
+	display:inline-block;
+	position:relative;
+}
+.multiSelect select  {
+	background:#fff url(add.png) no-repeat left center;
+	width:20px;
+	border-color:transparent;
+	margin:0 5px;
+}
+.multiSelect ul:first-child {
+	display:inline;
+}
+.multiSelect ul:first-child li {
+	display:inline-block;
+	background-color:#b1cff1;
+	padding:0 2px;
+	border-radius:2px;
+	border:1px solid gray;
+	margin:1px;
+}
+li.multiSelection {
+	cursor:default;
+}
+li.multiSelection > a {
+	text-decoration:none;
+	font-size:11px;
+	font-weight:bold;
+	display:inline-block;
+	margin-left:5px;
+	position:relative;
+	float:right;
+}

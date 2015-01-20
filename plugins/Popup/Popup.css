@@ -1,0 +1,16 @@
+#popupWindowsLike {
+	padding-bottom:10px;
+}
+#popupWindowsLike .headband{
+	margin-bottom:10px;
+}
+#popupWindowsLike form.popupButtons {
+	width:100%;
+	text-align:right;
+	margin-top:10px;
+}
+#popupWindowsLike form.popupButtons button {
+	min-width:80px;
+	font-size:14px;
+	margin-left:5px;
+}

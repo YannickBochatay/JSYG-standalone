@@ -1,0 +1,5 @@
+.ScanDirIcons,.ScanDirDetails {
+	background-color:white;
+	max-height:400px;
+	overflow-y:scroll;
+}
