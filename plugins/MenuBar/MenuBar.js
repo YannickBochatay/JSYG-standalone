@@ -31,7 +31,7 @@ JSYG.require('Menu','MenuBar.css',function() {
 				if (!menu.title) throw new Error("Il faut définir la propriété title du menu");
 				this.list.splice(ind,0,menu);
 			}
-			else throw new Error("Le menu existe d�j�");
+			else throw new Error("Le menu existe déjà");
 		}
 		else throw new Error(menu + " n'est pas une instance de JSYG.Menu");
 		
@@ -81,7 +81,7 @@ JSYG.require('Menu','MenuBar.css',function() {
 	
 	JSYG.MenuBar.prototype.create = function() {
 						
-		var ul = new JSYG(this.node).clear().classAdd(this.className);
+		var ul = new JSYG(this.node).empty().classAdd(this.className);
 		
 		var that = this;
 		

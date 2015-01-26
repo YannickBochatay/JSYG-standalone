@@ -25,7 +25,7 @@
 			+ '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'
 			+ "\n";
 		
-		//sans �a, la conversion en pdf avec rsvg pose parfois des probl�mes
+		//sans ça, la conversion en pdf avec rsvg pose parfois des probl�mes
 		str = str.replace(/ \w+:href=/g,' xlink:href=');
 		str = str.replace(/ xmlns:\w+="http:\/\/www\.w3\.org\/1999\/xlink"/g,'');
 									

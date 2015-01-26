@@ -5,14 +5,14 @@ JSYG.require('FileManager.css',"Ajax");
 	"use strict";
 	
 	/**
-	 * Gestion de fichiers (bas� sur FileReader)
+	 * Gestion de fichiers (basé sur FileReader)
 	 * @param opt optionnel, objet définissant les options.
 	 * @returns {JSYG.FileManager}
 	 * @link https://developer.mozilla.org/fr/DOM/FileReader
 	 */
 	JSYG.FileManager = function(opt) {
 		
-		if (!window.FileReader ) { throw new Error("Ce navigateur n'impl�mente pas le constructeur FileReader"); }
+		if (!window.FileReader ) throw new Error("Ce navigateur n'implémente pas le constructeur FileReader");
 		
 		/**
 		 * Liste des fichiers
@@ -43,31 +43,31 @@ JSYG.require('FileManager.css',"Ajax");
 	 */
 	JSYG.FileManager.prototype.maxSize = null;
 	/**
-	 * Classe appliqu�e aux icones
+	 * Classe appliquée aux icones
 	 */
 	JSYG.FileManager.prototype.classIcon = 'fileIcon';
 	/**
-	 * Fonction(s) � ex�cuter une fois que le fichier est lu
+	 * Fonction(s) à exécuter une fois que le fichier est lu
 	 */
 	JSYG.FileManager.prototype.onreaded = null;
 	/**
-	 * Fonction(s) � ex�cuter � la validation du choix du(des) fichier(s) dans la bo�te de dialogue
+	 * Fonction(s) à exécuter à la validation du choix du(des) fichier(s) dans la boîte de dialogue
 	 */
 	JSYG.FileManager.prototype.ondialogsubmit = null;
 	/**
-	 * Fonction(s) � ex�cuter quand le fichier ne remplit pas les crit�res pr�cis�s
+	 * Fonction(s) à exécuter quand le fichier ne remplit pas les critères précisés
 	 */
 	JSYG.FileManager.prototype.onfileerror = null;
 	/**
-	 * Fonction(s) � ex�cuter � la création d'une ic�ne correspondant au fichier
-	 * this fait référence � l'objet FileReader, le premier argument � l'objet File et le 2�me � l'icone (élément DOM a)
+	 * Fonction(s) à exécuter à la création d'une icône correspondant au fichier
+	 * this fait référence à l'objet FileReader, le premier argument à l'objet File et le 2ème à l'icone (élément DOM a)
 	 */
 	JSYG.FileManager.prototype.oncreateicon = null;
 	
 	/**
-	 * Ouvre la bo�te de dialogue native de choix de fichiers.
-	 * @param {Boolean} multiple autorise ou non le choix de plusieurs fichiers simultan�ment.
-	 * @param {Function} callback optionnel, function � ex�cuter sur le(s) fichier(s) � la validation. Le 1er argument est la liste des fichiers (FileList).
+	 * Ouvre la boîte de dialogue native de choix de fichiers.
+	 * @param {Boolean} multiple autorise ou non le choix de plusieurs fichiers simultanément.
+	 * @param {Function} callback optionnel, function à exécuter sur le(s) fichier(s) à la validation. Le 1er argument est la liste des fichiers (FileList).
 	 * @returns {JSYG.FileManager}
 	 */
 	JSYG.FileManager.prototype.openDialog = function(multiple,callback) {
@@ -89,7 +89,7 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * Ajoute une liste de fichiers � la liste courante
+	 * Ajoute une liste de fichiers à la liste courante
 	 * @param {Object} files objet FileList
 	 * @returns {JSYG.FileManager}
 	 * @link https://developer.mozilla.org/fr/DOM/FileList
@@ -101,7 +101,7 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * Remise � z�ro de la liste des fichiers
+	 * Remise à zéro de la liste des fichiers
 	 * @returns {JSYG.FileManager}
 	 */
 	JSYG.FileManager.prototype.clearList = function() {
@@ -124,7 +124,7 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * Action � ex�cuter sur chaque fonction de la liste 
+	 * Action à exécuter sur chaque fonction de la liste 
 	 * @param {Function} callback
 	 * @returns {JSYG.FileManager}
 	 */
@@ -134,7 +134,7 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * Ajout d'un fichier � la liste
+	 * Ajout d'un fichier à la liste
 	 * @param {Object} file objet File
 	 * @returns {JSYG.FileManager}
 	 * @link https://developer.mozilla.org/fr/DOM/File
@@ -152,7 +152,7 @@ JSYG.require('FileManager.css',"Ajax");
 	
 	/**
 	 * Suppression d'un fichier de la liste
-	 * @param file indice ou objet File � supprimer
+	 * @param file indice ou objet File à supprimer
 	 * @returns {JSYG.FileManager}
 	 */
 	JSYG.FileManager.prototype.removeItem = function(file) {
@@ -188,10 +188,10 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * création d'une ic�ne correspondant au fichier (lien avec une image et le nom du fichier)
+	 * création d'une icône correspondant au fichier (lien avec une image et le nom du fichier)
 	 * @param {Object} file 
-	 * @param {Function} callback optionnel, équivalent � "onicon".
-	 * this fait référence � l'objet FileReader, le premier argument � l'objet File et le 2�me � l'icone (élément DOM a)
+	 * @param {Function} callback optionnel, équivalent à "onicon".
+	 * this fait référence à l'objet FileReader, le premier argument à l'objet File et le 2ème à l'icone (élément DOM a)
 	 * @returns {Object} élément DOM a
 	 */
 	JSYG.FileManager.prototype.createIcon = function(file,callback) {
@@ -227,8 +227,8 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * vérifie que le fichier remplit les crit�res pr�cis�s dans les propriétés de l'objet JSYG.FileManager
-	 * Si une erreur est rencontr�e, l'�v�nement "filerror" est d�clench�.
+	 * vérifie que le fichier remplit les critères précisés dans les propriétés de l'objet JSYG.FileManager
+	 * Si une erreur est rencontrée, l'évènement "filerror" est déclenché.
 	 * @param {Object} file objet File
 	 * @returns {Boolean}
 	 */
@@ -236,7 +236,7 @@ JSYG.require('FileManager.css',"Ajax");
 				
 		var error = '';
 				
-		if (!(file instanceof File)) error+= "L'argument file doit �tre une instance de File\n";
+		if (!(file instanceof File)) error+= "L'argument file doit être une instance de File\n";
 		
 		if (!this.duplicate) {
 			
@@ -265,7 +265,7 @@ JSYG.require('FileManager.css',"Ajax");
 			error+= "Le fichier \""+file.name+"\" est trop lourd ("+Math.round(file.size/1000)+"Ko pour un maxi de "+this.maxSize+"Ko)\n";
 		}
 		
-		if (error) { this.trigger('fileerror',this,file,error); }
+		if (error) this.trigger('fileerror',this,file,error);
 				
 		return !error;
 	};
@@ -284,7 +284,7 @@ JSYG.require('FileManager.css',"Ajax");
 	 * Lit un fichier
 	 * @param {Object} file objet File
 	 * @param {String} format 'url','text' ou 'binary' 
-	 * @param {Function} callback optionnel, action � ex�cuter � la fin de la lecture. Equivalent � l'�v�nement "readed"
+	 * @param {Function} callback optionnel, action à exécuter à la fin de la lecture. Equivalent à l'évènement "readed"
 	 * @returns {JSYG.FileManager}
 	 */
 	JSYG.FileManager.prototype.readFile = function(file,format,callback) {
@@ -315,10 +315,10 @@ JSYG.require('FileManager.css',"Ajax");
 	};
 	
 	/**
-	 * Cr�e un élément DOM image � partir d'un fichier
+	 * Crée un élément DOM image à partir d'un fichier
 	 * @param file objet File
 	 * @param format 'html' ou 'svg'
-	 * @param callback function � ex�cuter une fois pr�t, le premier argument est l'élément image 
+	 * @param callback function à exécuter une fois prêt, le premier argument est l'élément image 
 	 * @returns {Image}
 	 */
 	JSYG.FileManager.prototype.createImage = function(file,format,callback) {
