@@ -45,7 +45,7 @@
 		this.node = new JSYG(arg).node;
 		/**
 		 * argument JSYG faisant référence aux éléments qui activent le redimensionnement.
-		 * Par d�faut l'élément lui-m�me
+		 * Par défaut l'élément lui-même
 		 */
 		this.field = this.node;
 		/**
@@ -74,7 +74,7 @@
 	 */	
 	JSYG.Resizable.prototype.event = 'left-mousedown';
 	/**
-	 * Classe appliqu�e � l'élément pendant le redimensionnement
+	 * Classe appliquée � l'élément pendant le redimensionnement
 	 */
 	JSYG.Resizable.prototype.className = false;
 	/**

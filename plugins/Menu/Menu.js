@@ -73,7 +73,7 @@ JSYG.require('Menu.css','KeyShortCut','Droppable');
 		 */
 		action:null,
 		/**
-		 * Objet sous-menu dans le cas o� l'item permet juste l'affichage d'un sous-menu
+		 * Objet sous-menu dans le cas où l'item permet juste l'affichage d'un sous-menu
 		 */
 		submenu:null,
 		/**
@@ -164,7 +164,7 @@ JSYG.require('Menu.css','KeyShortCut','Droppable');
 		return cible;
 	};
 	/**
-	 * Classe appliqu�e au conteneur
+	 * Classe appliquée au conteneur
 	 */
 	JSYG.Menu.prototype.className = 'Menu';
 	/**

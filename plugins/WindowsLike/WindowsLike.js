@@ -93,7 +93,7 @@ JSYG.require("Animation","WindowsLike.css");
 		 */
 		cookieSize : false,
 		/**
-		 * durée de conservation des cookies position et taille (nombre de jours ou objet Date ou null pour session en cours)
+		 * durée de conservation des cookies position et taille (nombre de jours ou objet Date ou JSYG.Date ou Infinity ou null pour session en cours)
 		 */
 		cookiePosSizeExpire : 2,
 		/**
@@ -736,7 +736,7 @@ JSYG.require("Animation","WindowsLike.css");
 					
 					valcookie = 'close';
 										
-					JSYG.cookies.write(this.node.id,valcookie,this.cookieCloseExpire);
+					JSYG.cookies.setItem(this.node.id,valcookie,this.cookieCloseExpire);
 				}
 			}
 			else
@@ -745,7 +745,7 @@ JSYG.require("Animation","WindowsLike.css");
 			
 				if (this.resizable && this.cookieSize) { valcookie+= ","+this.node.offsetWidth+","+this.node.offsetHeight; }
 
-				JSYG.cookies.write(this.node.id,valcookie,this.cookieSizePosExpire);
+				JSYG.cookies.setItem(this.node.id,valcookie,this.cookieSizePosExpire);
 			}
 						
 			return this;
@@ -760,7 +760,7 @@ JSYG.require("Animation","WindowsLike.css");
 			var jNode = new JSYG(this.node),
 				dim = jNode.getDim(),
 				cookie = [],
-				valcookie = JSYG.cookies.read(this.node.id),
+				valcookie = JSYG.cookies.getItem(this.node.id),
 				gauche,hauteur,deplx,deply,
 				larg,haut,i,recentre,
 				that = this;
@@ -811,7 +811,7 @@ JSYG.require("Animation","WindowsLike.css");
 				}
 			}
 			
-			 //cookie de fermeture persistante, valable m�me si cookie est défini � false
+			 //cookie de fermeture persistante, valable même si cookie est défini � false
 			if (this.cookieClose && cookie.length > 0 && cookie[0]=='close') jNode.hide();
 			
 			return this;
@@ -1169,7 +1169,7 @@ JSYG.require("Animation","WindowsLike.css");
 					'unload':cookieWrite
 				})
 				.off('resize scroll',recentreY)
-				.off('resize',maximize); //pas possible d'avoir 2 propriétés du m�me nom !
+				.off('resize',maximize); //pas possible d'avoir 2 propriétés du même nom !
 				
 				data = jNode.data('windowsLike');
 				if (data && data.filter) data.filter.animate('clear').css('opacity',"0.5").remove();

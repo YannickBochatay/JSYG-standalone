@@ -9,7 +9,7 @@ JSYG.require('ScanDir.css','Date','Ajax');
 	/**
 	 * <strong>nécessite le module ScanDir</strong><br/><br/>
 	 * Analyse d'un r�pertoire. Pas tr�s s�curis� vu que le chemin du r�pertoire passe dans la cha�ne de requ�te.<br/><br/>
-	 * @param arg argument JSYG faisant référence � l'élément o� sera affich� le contenu
+	 * @param arg argument JSYG faisant référence � l'élément où sera affich� le contenu
 	 * @param opt optionnel, objet définissant les options. Si défini, le contenu du r�pertoire sera implicitement affich�.
 	 * @returns {JSYG.ScanDir}
 	 */
@@ -27,7 +27,7 @@ JSYG.require('ScanDir.css','Date','Ajax');
 	
 	JSYG.ScanDir.prototype.constructor = null;
 	/**
-	 * Element o� est ins�r� le contenu
+	 * Element où est ins�r� le contenu
 	 */
 	JSYG.ScanDir.prototype.container = null;
 	/**
@@ -55,7 +55,7 @@ JSYG.require('ScanDir.css','Date','Ajax');
 	 */
 	JSYG.ScanDir.prototype.miniature = false;
 	/**
-	 * Tri pour l'ordre d'affichage ('nom','date' ou 'taille', 'nom' par d�faut)
+	 * Tri pour l'ordre d'affichage ('nom','date' ou 'taille', 'nom' par défaut)
 	 */
 	JSYG.ScanDir.prototype.sorting = 'name';
 	/**

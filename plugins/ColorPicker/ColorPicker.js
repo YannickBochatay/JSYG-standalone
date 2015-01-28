@@ -27,7 +27,7 @@ JSYG.require('Color','Draggable','ColorPicker.css');
 	JSYG.ColorPicker.prototype.constructor = JSYG.ColorPicker;
 	
 	/**
-	 * Classe appliqu�e au conteneur
+	 * Classe appliquée au conteneur
 	 */
 	JSYG.ColorPicker.prototype.className = 'colorPicker';
 	

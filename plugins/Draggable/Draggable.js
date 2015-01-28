@@ -67,7 +67,7 @@
 		 */
 		this.node = new JSYG(arg).node;
 		/**
-		 * Argument JSYG faisant référence au(x) Champ(s) sur le(s)quel(s) on clique pour d�clencher le drag&drop. Par d�faut l'élément lui-m�me.
+		 * Argument JSYG faisant référence au(x) Champ(s) sur le(s)quel(s) on clique pour d�clencher le drag&drop. Par défaut l'élément lui-même.
 		 */
 		this.field = this.node;
 		

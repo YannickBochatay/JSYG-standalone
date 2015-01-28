@@ -58,7 +58,7 @@ JSYG.require("Animation","LoadingMask.css");
 		 */
 		icon : 'small',
 		/**
-		 * Pour les ic�nes pr�définies ('long','small','big'), format � utiliser (les png anim�s ne fonctionnent pas avec IE m�me 9)
+		 * Pour les ic�nes pr�définies ('long','small','big'), format � utiliser (les png anim�s ne fonctionnent pas avec IE même 9)
 		 */
 		ext : 'gif',
 		/**

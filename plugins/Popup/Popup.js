@@ -38,7 +38,7 @@ JSYG.require("WindowsLike","Popup.css", function() {
 		return this;
 	},
 	/**
-	 * id appliqu� au conteneur
+	 * id appliqué au conteneur
 	 */
 	Popup.prototype.id = 'popupWindowsLike';
 	

@@ -75,17 +75,17 @@ JSYG.require("Animation","Ajax","Tooltip.css");
 	JSYG.Tooltip.prototype.position = 'pointer';
 	/**
 	 * D�calage horizontal par rapport au curseur souris, si position est défini à 'pointer'
-	 * @type {Number} : 15 par d�faut
+	 * @type {Number} : 15 par défaut
 	 */
 	JSYG.Tooltip.prototype.shiftX = 15;
 	/**
 	 * D�calage vertical par rapport au curseur souris, si position est défini à 'pointer'
-	 * @type {Number} : 15 par d�faut
+	 * @type {Number} : 15 par défaut
 	 */
 	JSYG.Tooltip.prototype.shiftY = 15;
 	/**
 	 * classe affectée à la div d'infobulle
-	 * @type {String} : 'tooltip' par d�faut
+	 * @type {String} : 'tooltip' par défaut
 	 */
 	JSYG.Tooltip.prototype.className = 'tooltip';
 	/**

@@ -403,6 +403,8 @@
 					this.date.setFullYear(this.date.getFullYear() + val.intg);
 					val.mod != 0 && this.add("days", Math.round(val.mod*365) );
 					break;
+				
+				default : throw new Error(units+" : unité inconnue");
 			}
 			
 			return this;

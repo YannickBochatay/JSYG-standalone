@@ -59,32 +59,32 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 	 */
 	JSYG.Slide.prototype.content = null;
 	/**
-	 * si type !='html' url o� aller chercher les donn�es
+	 * si type !='html' url où aller chercher les donn�es
 	 */
 	JSYG.Slide.prototype.url = null;
 	/**
-	 * si type=='ajax', indique si le contenu doit �tre recharg� à chaque fois ou non
+	 * si type=='ajax', indique si le contenu doit être recharg� à chaque fois ou non
 	 */
 	JSYG.Slide.prototype.refresh = false;
 	/**
-	 * Si le contenu doit �tre charg� (ajax, image, iframe), utilise ou non le masque de chargement.
+	 * Si le contenu doit être chargé (ajax, image, iframe), utilise ou non le masque de chargement.
 	 * Valeurs possibles : true ou false, ou objet définissant les options du masque.
 	 */
 	JSYG.Slide.prototype.loading = true;
 	/**
-	 * Noeud cr�� à l'activation des slides
+	 * Noeud créé à l'activation des slides
 	 */
 	JSYG.Slide.prototype.node = null;
 	/**
-	 * Champ permettant de s�lectionner ce slide
+	 * Champ permettant de sélectionner ce slide
 	 */			
 	JSYG.Slide.prototype.field = null;
 	/**
-	 * Classe appliqu�e au champ
+	 * Classe appliquée au champ
 	 */
 	JSYG.Slide.prototype.classField = 'slideField';
 	/**
-	 * Classe ajout�e au champ lorsqu'il est s�lectionn�
+	 * Classe ajoutée au champ lorsqu'il est sélectionn�
 	 */
 	JSYG.Slide.prototype.classFieldSelected = 'selected';
 	/**
@@ -92,23 +92,23 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 	 */
 	JSYG.Slide.prototype.effect = null;
 	/**
-	 * si effect!=null définit d'�ventuelles options suppl�mentaires de l'effet
+	 * si effect!=null définit d'�ventuelles options supplémentaires de l'effet
 	 */
 	JSYG.Slide.prototype.effectOptions = null;
 	/**
-     * Fonction(s) à éxécuter quand le slide est charg�
+     * Fonction(s) à éxécuter quand le slide est chargé
      */
 	JSYG.Slide.prototype.onload = null;
 	/**
-	 * Fonction(s) à éxécuter quand le slide est affich�
+	 * Fonction(s) à éxécuter quand le slide est affiché
 	 */
 	JSYG.Slide.prototype.onshow = null;
 	/**
-	 * Fonction(s) à éxécuter quand le slide est masqu�
+	 * Fonction(s) à éxécuter quand le slide est masqué
 	 */
 	JSYG.Slide.prototype.onhide = null;
 	/**
-	 * Fonction(s) à éxécuter quand le slide est masqu� ou affich�
+	 * Fonction(s) à éxécuter quand le slide est masqué ou affiché
 	 */
 	JSYG.Slide.prototype.ontoggle = null;
 	/**
@@ -118,7 +118,7 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 	 * @see JSYG.Slides
 	 */
 	JSYG.Slide.prototype.addTo = function(slideList,ind) {
-		if (slideList.constructor !== JSYG.Slides) throw "L'argument de la méthode addTo doit �tre une instance de JSYG.Slides";
+		if (slideList.constructor !== JSYG.Slides) throw "L'argument de la méthode addTo doit être une instance de JSYG.Slides";
 		slideList.addItem(this,ind);
 		return this;
 	};
@@ -191,7 +191,7 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 	 */
 	JSYG.Slides.prototype.current = -1;
 	/**
-	 * Slide à afficher par d�faut (une valeur est obligatoire)
+	 * Slide à afficher par défaut (une valeur est obligatoire)
 	 */
 	JSYG.Slides.prototype.defaultSlide = 0;
 	/**
@@ -200,23 +200,23 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 	JSYG.Slides.prototype.enabled = false;
 	/**
 	 * Effet entre chaque slide ('slide','fade','accordion','none'),
-	 * si elle n'est pas définie au niveau du slide lui-m�me (objet JSYG.Slide), 
+	 * si elle n'est pas définie au niveau du slide lui-même (objet JSYG.Slide), 
 	 */
 	JSYG.Slides.prototype.effect = 'none';
 	/**
-	 * Options suppl�mentaires pour l'effet
+	 * Options supplémentaires pour l'effet
 	 */
 	JSYG.Slides.prototype.effectOptions = null;
 	/**
-	 * Pour adapter la hauteur au slide affich�
+	 * Pour adapter la hauteur au slide affiché
 	 */
 	JSYG.Slides.prototype.flexibleHeight = false;
 	/**
-	 * définit si le slide suivant doit �tre charg� par anticipation (slide-1)
+	 * définit si le slide suivant doit être chargé par anticipation (slide-1)
 	 */
 	JSYG.Slides.prototype.anticipate = false;
 	/**
-	 * définit si le slide en cours doit �tre conservé dans un cookie
+	 * définit si le slide en cours doit être conservé dans un cookie
 	 */
 	JSYG.Slides.prototype.cookie = false;
 	/**
@@ -463,7 +463,7 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 			
 		if (slide.constructor !== JSYG.Slide) {
 			if (JSYG.isPlainObject(slide)) slide = new JSYG.Slide(slide);
-			else throw new Error("L'argument slide doit �tre une instance de JSYG.Slide");
+			else throw new Error("L'argument slide doit être une instance de JSYG.Slide");
 		}
 		
 		if (this.list.indexOf(slide) !== -1) throw new Error("Ce slide est d�j� dans la liste");
@@ -790,9 +790,9 @@ JSYG.require("Animation",'Slides.css','LoadingMask','Ajax');
 			
 			if (!JSYG.cookies) throw new Error("Il faut inclure le plugin JSYG.Cookies");
 			
-			unload = function() { JSYG.cookies.write('slides',that.current); };
+			unload = function() { JSYG.cookies.setItem('slides',that.current); };
 			
-			var cookie = JSYG.cookies.read('slides');
+			var cookie = JSYG.cookies.getItem('slides');
 			
 			if (cookie!=null) this.show(cookie);
 			else this.show(this.defaultSlide);

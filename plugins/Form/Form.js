@@ -83,7 +83,7 @@
 		
 		/**
 		 * Récupération des données sous forme d'objet FormData (non compatible IE)
-		 * @param formData si défini les données sont ajout�es à cet objet FormData
+		 * @param formData si défini les données sont ajoutées à cet objet FormData
 		 * @returns {FormData}
 		 */
 		toData : function(formData) {

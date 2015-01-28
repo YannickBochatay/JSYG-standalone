@@ -82,11 +82,11 @@ JSYG.require("RichTextArea.css","Color");
 		constructor : JSYG.RichTextArea,
 		
 		/**
-		 * Classe appliqu�e � l'iframe rempla�ant la textarea
+		 * Classe appliquée � l'iframe rempla�ant la textarea
 		 */
 		className : 'rich',
 		/**
-		 * Class appliqu�e � la barre d'outils
+		 * Class appliquée � la barre d'outils
 		 */
 		classToolBar : 'richToolBar',
 		/**
@@ -221,7 +221,7 @@ JSYG.require("RichTextArea.css","Color");
 		},
 		
 		/**
-		 * récupère le noeud de texte s�lectionn�
+		 * récupère le noeud de texte sélectionn�
 		 * @returns {JSYG}
 		 */
 		getNodeSelection : function() {
@@ -254,7 +254,7 @@ JSYG.require("RichTextArea.css","Color");
 		_oldHtml : '', 
 		
 		/**
-		 * définition de la fonction qui mettra � jour les options de style en fonction du texte s�lectionn�
+		 * définition de la fonction qui mettra � jour les options de style en fonction du texte sélectionn�
 		 */
 		_addUpdateFunction : function(fct) {
 			
@@ -605,7 +605,7 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	FontFamily.prototype.field = null;
 	/**
-	 * Classe appliqu�e � la liste affich�e
+	 * Classe appliquée � la liste affich�e
 	 */
 	FontFamily.prototype.classNameList = 'richList';
 	/**
@@ -762,7 +762,7 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	FontSize.prototype.field = null;
 	/**
-	 * Classe appliqu�e � la liste
+	 * Classe appliquée � la liste
 	 */
 	FontSize.prototype.classNameList = 'richList';
 	/**
@@ -893,11 +893,11 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	TextAlign.prototype.field = null;
 	/**
-	 * Classe appliqu�e � la liste affich�e
+	 * Classe appliquée � la liste affich�e
 	 */
 	TextAlign.prototype.classNameList = 'richList';
 	/**
-	 * Fonction(s) � ex�cuter lorsqu'une valeur est s�lectionn�e
+	 * Fonction(s) � ex�cuter lorsqu'une valeur est sélectionn�e
 	 */
 	TextAlign.prototype.onexec = null;
 	/**
@@ -1029,11 +1029,11 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	FontColor.prototype.field = null;
 	/**
-	 * Classe appliqu�e � la liste affich�e
+	 * Classe appliquée � la liste affich�e
 	 */
 	FontColor.prototype.classNameList = 'richList';
 	/**
-	 * Fonction(s) � ex�cuter lorsqu'une valeur est s�lectionn�e
+	 * Fonction(s) � ex�cuter lorsqu'une valeur est sélectionn�e
 	 */
 	FontColor.prototype.onexec = null;
 	/**
@@ -1217,7 +1217,7 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	FontWeight.prototype.field = null;
 	/**
-	 * Classe appliqu�e au champ quand le "gras" est actif
+	 * Classe appliquée au champ quand le "gras" est actif
 	 */
 	FontWeight.prototype.classSelected = 'selected';
 	/**
@@ -1271,7 +1271,7 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	FontStyle.prototype.field = null;
 	/**
-	 * Classe appliqu�e au champ quand l'italique est actif
+	 * Classe appliquée au champ quand l'italique est actif
 	 */
 	FontStyle.prototype.classSelected = 'selected';
 	/**
@@ -1324,7 +1324,7 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	TextDecoration.prototype.field = null;
 	/**
-	 * Classe appliqu�e au champ quand le soulignement est actif
+	 * Classe appliquée au champ quand le soulignement est actif
 	 */
 	TextDecoration.prototype.classSelected = 'selected';
 	/**
@@ -1449,11 +1449,11 @@ JSYG.require("RichTextArea.css","Color");
 	 */
 	Smileys.prototype.field = null;
 	/**
-	 * Classe appliqu�e � la liste affich�e
+	 * Classe appliquée � la liste affich�e
 	 */
 	Smileys.prototype.classNameList = 'richList smileys';
 	/**
-	 * Fonction(s) � ex�cuter lorsqu'une valeur est s�lectionn�e
+	 * Fonction(s) � ex�cuter lorsqu'une valeur est sélectionn�e
 	 */
 	Smileys.prototype.onexec = null;
 	/**
