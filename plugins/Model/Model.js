@@ -13,7 +13,7 @@ JSYG.require('DataBase','Ajax',function() {
 		
 		this.attributes = {};
 		
-		if (arg) this.set(arg);
+		if (arg) this.set(arg,undefined,true);
 	};
 	
 	JSYG.Model.prototype = {
@@ -33,18 +33,22 @@ JSYG.require('DataBase','Ajax',function() {
 		ondestroy : null,
 		onfetch : null,
 		
-		set : function(name,value) {
+		set : function(name,value,_dontTrigger) {
 			
 			if (JSYG.isPlainObject(name)) {
-				for (var n in name) this.set(n,name[n]);
-				return this;
+				
+				for (var n in name) this.set(n,name[n],true);
 			}
 			else if (value === undefined && JSYG.isNumeric(name)) {
+				
 				this.attributes[this.key] = name;
-				return this;
+			}
+			else {
+			
+				this.attributes[name] = value;
 			}
 			
-			this.attributes[name] = value;
+			if (!_dontTrigger) this.trigger("change",this);
 			
 			return this;
 		},
@@ -56,7 +60,7 @@ JSYG.require('DataBase','Ajax',function() {
 		
 		on : function() { JSYG.StdConstruct.prototype.on.apply(this,arguments); },
 		
-		off : function() { JSYG.StdConstruct.prototype.on.apply(this,arguments); },
+		off : function() { JSYG.StdConstruct.prototype.off.apply(this,arguments); },
 		
 		trigger : function() { JSYG.StdConstruct.prototype.trigger.apply(this,arguments); },
 		
@@ -135,7 +139,7 @@ JSYG.require('DataBase','Ajax',function() {
 			else promise = this._createQuery().get(id);
 		
 			return promise.then(function(properties) {
-				that.set(properties);
+				that.set(properties,undefined,true);
 				that.trigger("fetch",that,properties);
 				return properties;
 			});
