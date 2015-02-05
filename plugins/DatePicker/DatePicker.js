@@ -368,7 +368,7 @@ JSYG.require('DatePicker.css','Date',function() {
 	
 	/**
 	 * Crée le contenu en fonction de la valeur du datepicker ou de l'argument _date1 si précisé (objet JSYG.Date)
-	 */
+	
 	JSYG.InputDatePicker.prototype.create = function(_date1) {
 				
 		JSYG.DatePicker.prototype.create.call(this,_date1);
@@ -385,9 +385,10 @@ JSYG.require('DatePicker.css','Date',function() {
 		.classAdd('close')
 		.text('fermer')
 		.on('click',function() { that.hide(); });
-				
+		
 		return this;
 	};
+		*/
 		
 	/**
 	 * Affiche le datepicker
@@ -479,8 +480,14 @@ JSYG.require('DatePicker.css','Date',function() {
 					else that.show();
 				}
 			};
+		
+		function mousedownFct(e) {
+			if (that.display && e.target!= that.node && !new JSYG(e.target).isChildOf((that.container)) ) that.hide();
+		}
 											
 		jNode.attr('autocomplete','off').on(fcts);
+		
+		new JSYG(document).on("mousedown",mousedownFct);
 		
 		if (value) { 
 			try { this._value = new JSYG.Date(value); }
@@ -488,9 +495,15 @@ JSYG.require('DatePicker.css','Date',function() {
 		}
 				
 		this.disable = function() {
+			
 			this.enabled = false;
+			
 			jNode.attr('autocomplete',autocomplete);
+			
 			jNode.off(fcts);
+			
+			new JSYG(document).off("mousedown",mousedownFct);
+			
 			return this;
 		};
 		
