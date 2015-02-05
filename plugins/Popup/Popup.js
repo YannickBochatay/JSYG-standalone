@@ -112,7 +112,7 @@ JSYG.require("WindowsLike","Popup.css", function() {
 	}
 	/**
 	 * Affiche la popup
-	 * @param options cha�ne html du contenu à afficher ou objet avec les propriétés possibles suivantes :
+	 * @param options chaîne html du contenu à afficher ou objet avec les propriétés possibles suivantes :
 	 * <ul>
 	 * <li>content : argument JSYG, contenu à afficher</li>
 	 * <li>width : largeur de la popup</li>
@@ -187,7 +187,7 @@ JSYG.require("WindowsLike","Popup.css", function() {
 	 * Affichage d'une popup sur la page.
 	 * @example <pre>JSYG.popup.show('#monContenu');
 	 * 
-	 * //Utilisation avanc�e
+	 * //Utilisation avancée
 	 * JSYG.popup.show({
 	 * 	content:'#monContenu',
 	 * 	title:'Ma Popup',
@@ -198,7 +198,15 @@ JSYG.require("WindowsLike","Popup.css", function() {
 	JSYG.popup = new Popup();
 	
 	JSYG.popup.close = JSYG.popup.close.bind(JSYG.popup);
-	JSYG.popup.open = JSYG.popup.open.bind(JSYG.popup);
+	
+	/**
+	 * Chaque appel à open réinitialise les options définies.
+	 */
+	JSYG.popup.open = function() {
+		
+		JSYG.StdConstruct.prototype.reset.apply(this);
+		return Popup.prototype.open.apply(this,arguments);
+	};
 	
 		
 	JSYG.alert = function(message) {
