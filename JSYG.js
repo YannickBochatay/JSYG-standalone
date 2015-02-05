@@ -6138,7 +6138,7 @@ var JSYG;
 	 * @returns {String}
 	 */
 	JSYG.ucwords = function(str) {
-		return str.replace(/\b\w/g,function(s){ return s.toUpperCase(); });
+		return str.replace(/\b[a-z]/g,function(s){ return s.toUpperCase(); });
 	};
 	
 	/**
