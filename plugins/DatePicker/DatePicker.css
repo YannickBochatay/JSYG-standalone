@@ -62,10 +62,11 @@
 }
 
 .datePicker.input {
-	border: 1px gray dashed;
+	border: 1px solid #e0e0e0;
 	background-color:white;
 	position:absolute;
 	display:none;
+	box-shadow: 2px 2px 1px gray;
 }
 
 .datePicker td.close {
